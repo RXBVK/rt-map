@@ -1,0 +1,31 @@
+.csv-uploader__container {
+  & > * {
+    margin: 20px 0;
+  }
+  .csv-uploader__dropzone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 350px;
+    border: 2px dashed rgb(185, 185, 185);
+    margin-bottom: 40px;
+    font-size: 28px;
+  }
+  .csv-uploader__label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 40px;
+    background-color: bisque;
+    border-radius: 8px;
+    color: black;
+    margin: 0 auto;
+  }
+  #csv-uploader__input {
+    opacity: 0;
+    position: absolute;
+  }
+}

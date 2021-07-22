@@ -1,0 +1,72 @@
+.csv-uploader__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.csv-uploader__container > * {
+  margin: 40px 0;
+}
+
+.csv-uploader__container .csv-uploader__dropzone {
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 500px;
+  height: 300px;
+  border: 5px dashed bisque;
+  font-size: 28px;
+  background-color: #222222;
+}
+
+.csv-uploader__container .csv-uploader__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.csv-uploader__container #csv-uploader__input {
+  opacity: 0;
+  position: absolute;
+}
+
+@media (max-width: 600px) {
+  .csv-uploader__or,
+  .csv-uploader__dropzone {
+    display: none;
+  }
+}
+
+@media (min-width: 601px) {
+  .csv-uploader__or {
+    display: block;
+  }
+  .csv-uploader__dropzone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=csv-uploader.css.map */

@@ -1,0 +1,25 @@
+.main__container {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #3d3d3d, #212121);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.button--primary {
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  background-color: bisque;
+  color: black;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 200ms ease-out;
+  &:hover {
+    filter: brightness(0.8);
+  }
+}

@@ -1,0 +1,10 @@
+.main__container {
+  min-height: 100vh;
+  width: 100%;
+  //background-color: #212121;
+  background: linear-gradient(270deg, #404040, #212121);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}

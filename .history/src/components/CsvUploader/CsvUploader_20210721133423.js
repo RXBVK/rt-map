@@ -1,0 +1,15 @@
+import React from "react";
+import "./styles/csv-uploader.css";
+
+export default function CsvUploader() {
+  return (
+    <div className="csv-uploader__container">
+      <label for="csv-uploader__input" className="csv-uploader__label">
+        Upload from desktop
+      </label>
+      <input type="file" name="photo" id="csv-uploader__input" />
+      <h1>OR</h1>
+      <div className="csv-uploader__dropzone">Drag and drop the file here</div>
+    </div>
+  );
+}
