@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./styles/csv-uploader.css";
 
 export default function CsvUploader(props) {
-  const [fileTooBig, setFileTooBig] = useState(false);
   const handleFileUpload = (file) => {
     let reader = new FileReader();
     reader.addEventListener("load", () => {
@@ -13,12 +12,7 @@ export default function CsvUploader(props) {
       let splittedRows = rows.map((row) => row.split(separator));
       console.log(rows);
       console.log(splittedRows);
-      if (splittedRows.length > 20) {
-        setFileTooBig(true);
-      } else {
-        props.setUploadedRows(splittedRows);
-      }
-      console.log(splittedRows);
+      props.setUploadedRows(splittedRows);
     });
     reader.readAsText(file);
   };
@@ -53,13 +47,9 @@ export default function CsvUploader(props) {
         accept=".csv"
         onChange={(e) => handleFileUpload(e.target.files[0])}
       />
-      {fileTooBig ? (
-        <h5 style={{ color: "red", fontWeight: "900" }}>
-          Given .CSV file has too many rows (max 20)
-        </h5>
-      ) : (
-        ""
-      )}
+      <h5 style={{ color: "red", fontWeight: "900" }}>
+        Given .CSV file has too many rows (max 20)
+      </h5>
     </div>
   );
 }
